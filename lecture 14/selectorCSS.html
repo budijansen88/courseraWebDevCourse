@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining CSS Selector</title>
+
+    <style>
+
+        .firstBox{
+            display: flexbox;
+            background-color: #5CDB95;
+        }
+
+        .firstBox .mainTitle {
+            padding-top: 10px;
+            text-align: center;
+            color: #EDF5E1;
+            font-style:oblique ;
+        }
+
+        .firstBox .imgWrapper{
+            display: flex;
+            justify-content: center;
+        }
+
+        .firstBox .functionWrapper{
+            display: flex;
+            background-color: #5CDB95;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .normalFunction, .anonymousFunction, .arrowFunction {
+            color: #EDF5E1;
+            text-align: center;
+        }
+
+        .normalFunctionContainer, .anonymousFunctionContainer, .arrowFunctionContainer {
+            background-color:#05386B;
+            width: 300px;
+            border : 3px solid #5CDB95;
+        }
+
+        .normalFunctionParagraph, .anonymousFunctionParagraph, .arrowFunctionParagraph {
+            color: #EDF5E1;
+            white-space: pre;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="firstBox">
+    <h1 class="mainTitle">
+        Javascript Functions
+    </h1>
+    <div class="imgWrapper">
+        <img src="C:\Users\faishal\programming\courseraWebDevCourse\images\javascriptLogo.png" width="250px" height="250px">
+    </div>
+
+<div class="functionWrapper">
+    
+    <div class="normalFunctionContainer">
+        <h2 class="normalFunction">Normal Function</h2>
+    <p class="normalFunctionParagraph">
+        function log (value) {
+            console.log(value);
+        }
+
+        log("Poggers");
+
+        // output Poggers
+    </p>
+    </div>
+
+    
+    <div class="anonymousFunctionContainer">
+        <h2 class="anonymousFunction">Anonymous Function</h2>
+    <p class="anonymousFunctionParagraph">
+        const loggers = function (value) {
+            console.log(value);
+        }
+
+        loggers("Poggers");
+
+        // output Poggers
+    </p>
+    </div>
+
+    <div class="arrowFunctionContainer">
+        <h2 class="arrowFunction">Arrow Function</h2>
+    <p class="arrowFunctionParagraph">
+        const arrowLog = (value) => {
+            console.log(value);
+        }
+
+        arrowLog("Poggers");
+
+        // output Poggers
+    </p>
+    </div>
+
+</div> 
+</div>
+
+
+</body>
+</html>

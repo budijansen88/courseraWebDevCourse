@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS styling</title>
+    <style>
+        
+        #mainDiv {
+            display: flexbox;
+            background-color: bisque;
+            word-wrap: normal;
+            box-sizing: content-box;
+            
+        }
+
+        .H1Pertama {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .paragrafSatu, #paragrafKedua {
+            color: brown;
+            margin-left: 10px;
+            width: fit-content;            
+        }
+
+        .imgWrapperOutside {
+            background-color: burlywood;
+            display: flexbox;
+        }
+
+        .imgWrapperInside {
+            display: flex;
+            justify-content: center;     
+        }
+        
+        .h2Pertama, .h2Kedua {
+            margin-left: 10px;
+            width: fit-content;
+        }
+
+        .h2Ketiga{
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainDiv">
+    <h1 class="H1Pertama">CSS styling</h1>
+    
+    <h2 class="h2Pertama">Odd Taxi synopsis(1/2)</h2>
+    <p class="paragrafSatu">Eccentric and blunt, the walrus Hiroshi Odokawa lives a relatively normal life. 
+        He drives a taxi for a living, and there he meets several unique individuals: the jobless 
+        Taichi Kabasawa who is dead-set on going viral, the mysterious nurse Miho Shirakawa, 
+        the struggling comedic duo "Homo Sapiens," and Dobu, a well-known delinquent.
+    </p>
+    
+    <h2 class="h2Kedua">Odd Taxi synopsis(2/2)</h2>
+    <p id="paragrafKedua">But Odokawa's simple way of life is about to be turned upside-down. 
+        The case of a missing girl the police have been tracking leads back to him, and now both the yakuza 
+        and a duo of corrupt cops are on his tail. Set in a strangely familiar city filled with unusual 
+        individuals, Odd Taxi is a bizarre story about a humble taxi driver and the mystery of a 
+        lost high schooler.</p>
+    </div>
+
+    <div class="imgWrapperOutside">
+        <h2 class="h2Ketiga">Odokawa The Taxi Driver</h2>
+        <div class="imgWrapperInside">
+            <img src="C:\Users\faishal\programming\courseraWebDevCourse\images\Odokawa.png" class="odokawaImg" alt="Odokawa" title="Odokawa">
+        </div>
+    </div>
+
+</body>
+</html>
